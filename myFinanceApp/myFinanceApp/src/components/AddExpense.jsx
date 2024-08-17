@@ -96,7 +96,7 @@ const wallets = [
 ];
 
 
-export default function Expense() {
+export default function AddExpense() {
     const [selectedCategory, setselectedCategory] = useState(categories[0])
     const [amount, setAmount] = useState(0.00)
     const [selectedWallet, setSelectedWallet] = useState([])
