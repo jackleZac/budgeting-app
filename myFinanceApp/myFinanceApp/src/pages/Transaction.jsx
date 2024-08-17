@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Expense from '../components/Expense'
+import ExpensesList from '../components/ExpensesList'
 import axios from 'axios';
 
 export default function News() {
@@ -13,8 +13,8 @@ export default function News() {
           .catch(err => console.log(err))
     }, [])
     return (
-        <div>
-            <Expense />
+        <div className='grid grid-cols-1 gap-y-8'>
+            <ExpensesList />
         </div>
     )
 }
